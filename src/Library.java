@@ -1,0 +1,24 @@
+public class Library {
+
+    private int books;
+    private String catalog;
+    private int schedule;
+    private int places;
+    private boolean readingRoom;
+
+    public Library(int books, String catalog, int schedule, int places, boolean readingRoom) {
+        this.books = books;
+        this.catalog = catalog;
+        this.schedule = schedule;
+        this.places = places;
+        this.readingRoom = readingRoom;
+    }
+
+    public void giveBook() {}
+
+    @Override
+    public String toString() {
+        return "Library: books=" + books +
+                ", places=" + places;
+    }
+}
