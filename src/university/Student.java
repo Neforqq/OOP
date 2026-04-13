@@ -8,30 +8,41 @@ public class Student {
     private String group;
     private String studyForm;
 
+    private int grade;
+    private int attendance;
+
     public Student(String fullName, int studentId, String faculty, String group, String studyForm) {
         this.fullName = fullName;
         this.studentId = studentId;
         this.faculty = faculty;
         this.group = group;
         this.studyForm = studyForm;
+
+        this.grade = 0;
+        this.attendance = 0;
     }
 
-    public String getFullName() {
-        return fullName;
+    public void addGrade(int value) {
+        this.grade += value;
     }
 
-    public void changeGroup(String newGroup) {
-        this.group = newGroup;
+    public void addAttendance(int value) {
+        this.attendance += value;
     }
 
-    void study() {}
+    public boolean isPassing() {
+        return grade >= 60 && attendance >= 70;
+    }
+
+    public void study() {
+        System.out.println(fullName + " is studying");
+    }
 
     @Override
     public String toString() {
         return "Student: " + fullName +
-                ", id=" + studentId +
-                ", faculty=" + faculty +
                 ", group=" + group +
-                ", form=" + studyForm;
+                ", grade=" + grade +
+                ", attendance=" + attendance;
     }
 }
