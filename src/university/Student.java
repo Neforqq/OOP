@@ -1,5 +1,3 @@
-package university;
-
 public class Student {
 
     private String fullName;
@@ -16,22 +14,16 @@ public class Student {
         this.studyForm = studyForm;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getGroup() {
+        return group;
     }
 
-    public void changeGroup(String newGroup) {
-        this.group = newGroup;
+    public void study() {
+        System.out.println(fullName + " is studying");
     }
-
-    void study() {}
 
     @Override
     public String toString() {
-        return "Student: " + fullName +
-                ", id=" + studentId +
-                ", faculty=" + faculty +
-                ", group=" + group +
-                ", form=" + studyForm;
+        return "Student: " + fullName + ", group=" + group;
     }
 }
