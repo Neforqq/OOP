@@ -13,11 +13,15 @@ public class Library {
     }
 
     public void giveBook() {
-        books--;
+        if (books > 0) books--;
     }
 
     void returnBook() {
         books++;
+    }
+
+    public void registerVisit(Student student) {
+        System.out.println(student + " visited library");
     }
 
     @Override
