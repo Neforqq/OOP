@@ -16,26 +16,20 @@ public class Staff {
         this.experience = experience;
     }
 
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void changePosition(String newPosition) {
-        this.position = newPosition;
-    }
-
     public void increaseExperience(float years) {
         this.experience += years;
     }
 
-    void work() {
+    public void work() {
+        System.out.println(fullName + " is working in " + workArea);
+    }
+
+    void internalReport() {
+        System.out.println("Internal report from staff: " + fullName);
     }
 
     @Override
     public String toString() {
-        return "Staff: " + fullName +
-                ", position=" + position +
-                ", area=" + workArea +
-                ", exp=" + experience;
+        return "Staff: " + fullName + ", position=" + position;
     }
 }
