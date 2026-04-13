@@ -1,4 +1,5 @@
 package university;
+
 public class Classroom {
 
     private int number;
@@ -15,20 +16,15 @@ public class Classroom {
         this.status = status;
     }
 
-    public int getNumber() {
-        return number;
+    public void occupy() {
+        status = 1;
     }
 
-    public void changeStatus(int status) {
-        this.status = status;
+    public void free() {
+        status = 0;
     }
 
-    void use() {
-    }
-
-    @Override
-    public String toString() {
-        return "Classroom: " + number +
-                ", type=" + type;
+    void maintenanceCheck() {
+        System.out.println("Checking classroom " + number);
     }
 }
