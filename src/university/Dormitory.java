@@ -1,3 +1,4 @@
+package university;
 public class Dormitory {
 
     private int room;
@@ -14,7 +15,15 @@ public class Dormitory {
         this.bathroom = bathroom;
     }
 
-    public void settle() {}
+    public int getRoom() {
+        return room;
+    }
+
+    public void settle() {
+    }
+
+    void checkPlaces() {
+    }
 
     @Override
     public String toString() {

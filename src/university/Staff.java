@@ -1,3 +1,5 @@
+package university;
+
 public class Staff {
 
     private String position;
@@ -14,12 +16,26 @@ public class Staff {
         this.experience = experience;
     }
 
-    public void work() {}
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void changePosition(String newPosition) {
+        this.position = newPosition;
+    }
+
+    public void increaseExperience(float years) {
+        this.experience += years;
+    }
+
+    void work() {
+    }
 
     @Override
     public String toString() {
         return "Staff: " + fullName +
                 ", position=" + position +
-                ", area=" + workArea;
+                ", area=" + workArea +
+                ", exp=" + experience;
     }
 }

@@ -1,3 +1,5 @@
+package university;
+
 public class Discipline {
 
     private String name;
@@ -14,11 +16,25 @@ public class Discipline {
         this.examType = examType;
     }
 
-    public void teach() {}
+    public String getName() {
+        return name;
+    }
+
+    public void changeExamType(String type) {
+        this.examType = type;
+    }
+
+    public void addCredits(int value) {
+        this.credits += value;
+    }
+
+    void teach() {
+    }
 
     @Override
     public String toString() {
         return "Discipline: " + name +
-                ", code=" + code;
+                ", code=" + code +
+                ", credits=" + credits;
     }
 }

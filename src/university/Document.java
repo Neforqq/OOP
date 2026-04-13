@@ -1,3 +1,4 @@
+package university;
 public class Document {
 
     private int type;
@@ -14,7 +15,16 @@ public class Document {
         this.status = status;
     }
 
-    public void archive() {}
+    public int getId() {
+        return id;
+    }
+
+    public void archive() {
+        status = 2;
+    }
+
+    void getDocument() {
+    }
 
     @Override
     public String toString() {

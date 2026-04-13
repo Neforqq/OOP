@@ -1,3 +1,4 @@
+package university;
 public class Schedule {
 
     private String day;
@@ -14,7 +15,15 @@ public class Schedule {
         this.room = room;
     }
 
-    public void show() {}
+    public String getDay() {
+        return day;
+    }
+
+    public void show() {
+    }
+
+    void update() {
+    }
 
     @Override
     public String toString() {

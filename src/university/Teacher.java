@@ -1,3 +1,5 @@
+package university;
+
 public class Teacher {
 
     private String fullName;
@@ -14,13 +16,18 @@ public class Teacher {
         this.contacts = contacts;
     }
 
-    public void teach() {}
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void changeDepartment(String department) {
+        this.department = department;
+    }
+
+    void teach() {}
 
     @Override
     public String toString() {
-        return "Teacher: " + fullName +
-                ", dept=" + department +
-                ", degree=" + degree +
-                ", exp=" + experience;
+        return "Teacher: " + fullName;
     }
 }

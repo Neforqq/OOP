@@ -1,3 +1,7 @@
+package university;
+
+import java.util.ArrayList;
+
 public class EducationalInstitution {
 
     private String name;
@@ -5,6 +9,8 @@ public class EducationalInstitution {
     private int studentCount;
     private int teacherCount;
     private String address;
+
+    private ArrayList<Student> students = new ArrayList<>();
 
     public EducationalInstitution(String name, String type, int studentCount, int teacherCount, String address) {
         this.name = name;
@@ -14,12 +20,31 @@ public class EducationalInstitution {
         this.address = address;
     }
 
+    public void addStudent(Student student) {
+        students.add(student);
+    }
+
+    public void removeStudent(Student student) {
+        students.remove(student);
+    }
+
+    void showStudents() {
+        for (Student s : students) {
+            System.out.println(s);
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public void hireStaff() {}
-    public void organizeProcess() {}
+    void organizeProcess() {}
 
     @Override
     public String toString() {
-        return "Institution: " + name + ", type=" + type +
+        return "Institution: " + name +
+                ", type=" + type +
                 ", students=" + studentCount +
                 ", teachers=" + teacherCount +
                 ", address=" + address;

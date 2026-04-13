@@ -1,3 +1,4 @@
+package university;
 public class Portal {
 
     private String login;
@@ -14,7 +15,15 @@ public class Portal {
         this.alerts = alerts;
     }
 
-    public void sendMessage() {}
+    public String getLogin() {
+        return login;
+    }
+
+    public void sendMessage() {
+    }
+
+    void viewGrades() {
+    }
 
     @Override
     public String toString() {

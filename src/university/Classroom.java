@@ -1,3 +1,4 @@
+package university;
 public class Classroom {
 
     private int number;
@@ -14,7 +15,16 @@ public class Classroom {
         this.status = status;
     }
 
-    public void use() {}
+    public int getNumber() {
+        return number;
+    }
+
+    public void changeStatus(int status) {
+        this.status = status;
+    }
+
+    void use() {
+    }
 
     @Override
     public String toString() {

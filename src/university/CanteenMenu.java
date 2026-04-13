@@ -1,3 +1,4 @@
+package university;
 public class CanteenMenu {
 
     private int date;
@@ -14,7 +15,15 @@ public class CanteenMenu {
         this.price = price;
     }
 
-    public void buyFood() {}
+    public int getDate() {
+        return date;
+    }
+
+    public void buyFood() {
+    }
+
+    void showMenu() {
+    }
 
     @Override
     public String toString() {

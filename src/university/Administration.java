@@ -1,3 +1,5 @@
+package university;
+
 public class Administration {
 
     private String position;
@@ -14,11 +16,18 @@ public class Administration {
         this.schedule = schedule;
     }
 
-    public void manage() {}
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void changePosition(String position) {
+        this.position = position;
+    }
+
+    void manage() {}
 
     @Override
     public String toString() {
-        return "Admin: " + fullName +
-                ", position=" + position;
+        return "Admin: " + fullName;
     }
 }

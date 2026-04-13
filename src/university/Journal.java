@@ -1,3 +1,4 @@
+package university;
 public class Journal {
 
     private String discipline;
@@ -14,7 +15,11 @@ public class Journal {
         this.date = date;
     }
 
-    public void addGrade() {}
+    public void addGrade() {
+    }
+
+    void showStats() {
+    }
 
     @Override
     public String toString() {
