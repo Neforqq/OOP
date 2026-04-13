@@ -1,4 +1,5 @@
 package university;
+
 import java.util.ArrayList;
 
 public class EducationalInstitution {
@@ -26,6 +27,16 @@ public class EducationalInstitution {
 
     public void addTeacher(Teacher teacher) {
         teachers.add(teacher);
+    }
+
+    public void enrollStudent(Student student) {
+        students.add(student);
+        System.out.println("Enrolled: " + student);
+    }
+
+    public void assignTeacher(Teacher teacher) {
+        teachers.add(teacher);
+        System.out.println("Assigned: " + teacher);
     }
 
     public void showStudents() {
