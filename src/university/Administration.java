@@ -16,18 +16,15 @@ public class Administration {
         this.schedule = schedule;
     }
 
-    public String getFullName() {
-        return fullName;
-    }
-
     public void changePosition(String position) {
         this.position = position;
     }
 
-    void manage() {}
+    public void manageUniversity() {
+        System.out.println(fullName + " is managing university processes");
+    }
 
-    @Override
-    public String toString() {
-        return "Admin: " + fullName;
+    void internalControl() {
+        System.out.println("Internal control executed by admin");
     }
 }
