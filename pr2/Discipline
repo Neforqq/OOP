@@ -1,0 +1,24 @@
+public class Discipline {
+
+    private String name;
+    private int code;
+    private int credits;
+    private int duration;
+    private String examType;
+
+    public Discipline(String name, int code, int credits, int duration, String examType) {
+        this.name = name;
+        this.code = code;
+        this.credits = credits;
+        this.duration = duration;
+        this.examType = examType;
+    }
+
+    public void teach() {}
+
+    @Override
+    public String toString() {
+        return "Discipline: " + name +
+                ", code=" + code;
+    }
+}
