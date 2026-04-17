@@ -1,0 +1,23 @@
+public class Portal {
+
+    private String login;
+    private int access;
+    private String schedule;
+    private int courseAccess;
+    private String[] alerts;
+
+    public Portal(String login, int access, String schedule, int courseAccess, String[] alerts) {
+        this.login = login;
+        this.access = access;
+        this.schedule = schedule;
+        this.courseAccess = courseAccess;
+        this.alerts = alerts;
+    }
+
+    public void sendMessage() {}
+
+    @Override
+    public String toString() {
+        return "Portal user=" + login;
+    }
+}
